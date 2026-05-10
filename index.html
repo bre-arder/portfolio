@@ -123,6 +123,7 @@ section { padding: 5rem 2.5rem; }
 .tag-n { background: rgba(106,155,204,0.1); color: var(--teal); }
 .tag-m { background: rgba(204,120,92,0.1); color: var(--accent2); }
 .tag-f { background: rgba(44,43,40,0.1); color: var(--ink2); }
+.cs-hero.dark .tag-f { background: rgba(250,249,245,0.15); color: var(--paper); }
 .ci-title { font-family: var(--serif); font-size: 1.1rem; line-height: 1.2; color: var(--ink); margin-bottom: 0.3rem; margin-top: auto; }
 .ci-co { font-size: 0.78rem; color: var(--ink3); }
 
@@ -407,7 +408,7 @@ footer { background: var(--ink); color: rgba(250,249,245,0.3); padding: 1.25rem 
         <div class="wib-skill-cat">
           <p class="wib-skill-lbl">Quantitative &amp; Data Fluency</p>
           <div class="skill-tags">
-            <span class="skill-tag">SQL — Data Sampling &amp; Analysis</span><span class="skill-tag">Research Instrumentation Design</span><span class="skill-tag">Telemetry &amp; Behavioral Analytics</span><span class="skill-tag">HaTS / CSAT Programs</span><span class="skill-tag">Customer Effort Score</span><span class="skill-tag">Large-Scale Survey Design</span><span class="skill-tag">Segmentation &amp; Cluster Analysis</span><span class="skill-tag">A/B Testing</span><span class="skill-tag">PowerBI</span><span class="skill-tag">Looker Studio</span><span class="skill-tag">Qualtrics Text IQ / Stats IQ</span>
+            <span class="skill-tag">SQL — Data Sampling &amp; Analysis</span><span class="skill-tag">Research Instrumentation Design</span><span class="skill-tag">Telemetry &amp; Behavioral Analytics</span><span class="skill-tag">HaTS / CSAT Programs</span><span class="skill-tag">Customer Effort Score</span><span class="skill-tag">Large-Scale Survey Design</span><span class="skill-tag">Segmentation &amp; Cluster Analysis</span><span class="skill-tag">A/B Testing</span><span class="skill-tag">PowerBI</span><span class="skill-tag">Looker Studio</span><span class="skill-tag">Qualtrics Text iQ / Stats iQ</span>
           </div>
         </div>
         <div class="wib-skill-cat">
@@ -447,66 +448,60 @@ footer { background: var(--ink); color: rgba(250,249,245,0.3); padding: 1.25rem 
   <div class="cs-hero dark">
     <div class="cs-eyebrow"><span class="ci-tag tag-n">AI-Native</span><span class="ci-tag tag-m">Tool Building</span><span class="ci-tag tag-f">Program Design</span></div>
     <h2 class="cs-title">01 — The HaTS Feedback Program</h2>
-    <p class="cs-subtitle">Designing and operationalizing Firebase Studio's end-to-end user feedback infrastructure: a continuous in-product survey, an AI-powered open-text classification pipeline, a real-time UX metrics dashboard, and a telemetry integration proposal — all to give the team a faster, sharper signal on an agentic developer experience built around the App Prototyping agent, Gemini in Firebase, and a growing suite of specialized coding agents.</p>
+    <p class="cs-subtitle">Designing the end-to-end feedback infrastructure for an AI-native developer platform: continuous in-product survey, AI-powered open-text classification, real-time dashboard, and telemetry integration.</p>
     <div class="cs-outcome-row">
       <div class="cs-outcome"><span class="cs-outcome-num">4</span><span class="cs-outcome-lbl">Program components built</span></div>
-      <div class="cs-outcome"><span class="cs-outcome-num">87%</span><span class="cs-outcome-lbl">LLM classification consistency</span></div>
-      <div class="cs-outcome"><span class="cs-outcome-num">Daily</span><span class="cs-outcome-lbl">Dashboard refresh cadence</span></div>
-      <div class="cs-outcome"><span class="cs-outcome-num">Green</span><span class="cs-outcome-lbl">Telemetry integration track</span></div>
+      <div class="cs-outcome"><span class="cs-outcome-num">80%+</span><span class="cs-outcome-lbl">LLM classification agreement</span></div>
+      <div class="cs-outcome"><span class="cs-outcome-num">40K+</span><span class="cs-outcome-lbl">Open-text responses analyzed</span></div>
+      <div class="cs-outcome"><span class="cs-outcome-num">Real-time</span><span class="cs-outcome-lbl">Feedback to insight</span></div>
     </div>
   </div>
 
   <div class="cs-body">
     <div class="cs-two">
       <div>
-        <p class="cs-lbl">The Challenge</p>
-        <p class="cs-text">Firebase Studio launched in April 2025 with a first-generation HaTS survey providing a continuous pulse on overall satisfaction and ease of use. But the team's primary KPI wasn't the HaTS instrument ; it was <strong>CSAT</strong>, a single derived metric that compressed everything into one number trending toward a target of 80%. The tension was structural: HaTS is a <em>measurement framework</em> designed to capture attitudinal nuance; CSAT is a <em>business metric</em> designed to track progress against a goal. Using one to serve the other meant the instrument was simultaneously over-constrained (locked to a target) and under-specified (unable to explain why the number was moving).</p>
+        <p class="cs-lbl">The Background</p>
+        <p class="cs-text">Firebase Studio launched in April 2025 as the natively agentic evolution of Project IDX. As the platform scaled to a much broader builder population, the existing feedback infrastructure (a single in-product satisfaction survey) hadn't yet caught up to either the diversity of users or the complexity of an agentic developer experience.</p>
         <br>
-        <p class="cs-text">The survey was effective at flagging major pain points; but it couldn't answer the questions that actually drive product decisions: <em>who</em> is dissatisfied, <em>why</em> are they struggling, and <em>which specific interactions</em> preceded a negative experience? Manual analysis of open-ended responses was time-consuming and difficult to scale. Telemetry and survey data lived in separate silos. Stakeholders lacked timely access to synthesized feedback. And as the user base evolved, the survey instrument itself needed to catch up, reflecting the Builder Mindset framework rather than generic "reason for use" questions.</p>
+        <p class="cs-lbl">The Challenge</p>
+        <p class="cs-text">The first-generation HaTS survey provided a continuous pulse on satisfaction, but it couldn't answer the questions that actually drove product decisions: who was dissatisfied, why were they struggling, and which interactions preceded a negative experience? Manual analysis of open-ended responses didn't scale. Telemetry and survey data lived in separate silos. Stakeholders lacked timely access to synthesized feedback. As the user base evolved, the instrument itself needed to catch up.</p>
         <br>
         <p class="cs-lbl">My Role</p>
-        <p class="cs-text">Lead UX Researcher and program architect. I designed the HaTS V2 survey instrument, co-authored the LLM automation plan and HaTS+Telemetry integration proposal, wrote and tested the classification prompts, owned stakeholder reporting, and built the feedback taxonomy. Collaborated with JaYoung Lee (engineering), Abey Stenman, and Katharine Norwood.</p>
+        <p class="cs-text">Lead UX Researcher and program architect. I proposed treating HaTS not as a single survey but as layered feedback infrastructure, defined the four-component architecture, designed the V2 survey instrument, built the classification taxonomy, wrote and validated the LLM prompts, and drove the cross-functional partnership with engineering and Strategy Ops to build the dashboard and telemetry integration.</p>
       </div>
       <div class="cs-details-box">
         <div class="cs-detail-row"><div class="cs-detail-key">Company</div><div class="cs-detail-val">Google · <a href="https://developers.googleblog.com/introducing-project-idx-an-experiment-to-improve-full-stack-multiplatform-app-development/" target="_blank" rel="noopener" style="color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2);">Project IDX ↗</a> → <a href="https://cloud.google.com/blog/products/application-development/firebase-studio-lets-you-build-full-stack-ai-apps-with-gemini" target="_blank" rel="noopener" style="color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2);">Firebase Studio ↗</a> · UX Research Lead on launch</div></div>
         <div class="cs-detail-row"><div class="cs-detail-key">Program Components</div><div class="cs-detail-val">HaTS V2 Survey · LLM Analysis Automation · UX Metrics Dashboard · HaTS+Telemetry Integration Proposal</div></div>
-        <div class="cs-detail-row"><div class="cs-detail-key">Collaborators</div><div class="cs-detail-val">JaYoung Lee · Abey Stenman · Katharine Norwood · Firebase Studio Product & Eng teams</div></div>
-        <div class="cs-detail-row"><div class="cs-detail-key">Tools & Methods</div><div class="cs-detail-val">Listnr (survey platform) · Gemini 2.5 Pro (LLM classification) · Looker Studio (dashboard) · VertexAI API · Clearcut (telemetry)</div></div>
-        <div class="cs-detail-row"><div class="cs-detail-key">Status</div><div class="cs-detail-val">LLM automation: Completed · HaTS V2: In Review · Telemetry integration: Green Track</div></div>
+        <div class="cs-detail-row"><div class="cs-detail-key">Collaborators</div><div class="cs-detail-val">Firebase Studio Engineering team. Quant Research, Strategy &amp; Operations, and Data Science partners across the DevX org.</div></div>
+        <div class="cs-detail-row"><div class="cs-detail-key">Tools &amp; Methods</div><div class="cs-detail-val">In-product survey platform · Gemini 2.5 Pro (LLM classification) · Looker Studio (dashboard) · Vertex AI API · Internal telemetry pipeline</div></div>
+        <div class="cs-detail-row" style="border-top:1px solid var(--paper3);padding-top:0.75rem;margin-top:0.5rem;"><div class="cs-detail-val" style="font-style:italic;font-size:0.78rem;color:var(--ink3);grid-column:1/-1;">This case describes program-level architecture and methodology only. Specific findings, internal metrics, and confidential implementation details are omitted.</div></div>
       </div>
     </div>
   </div>
 
   <div class="cs-body gray">
     <p class="cs-lbl">Program Architecture: Four Components</p>
-    <p class="cs-text" style="max-width:700px;margin-bottom:1.5rem">Rather than treating the HaTS as a single survey, I designed it as a layered feedback infrastructure where each component builds on the others:</p>
+    <p class="cs-text" style="max-width:700px;margin-bottom:1.5rem">Rather than treating the HaTS as a single survey, I designed it as a layered feedback infrastructure where each component builds on the others.</p>
     <div class="cs-steps">
-      <div class="cs-step"><div class="cs-step-num">1</div><div><div class="cs-step-title">The HaTS V2 Survey — from "What" to "Who and Why"</div><div class="cs-step-desc">Redesigned the core in-product intercept survey (deployed via Listnr, triggered monthly with a 1–5 min random delay) to move beyond a generic CSAT score. The key methodological change: replacing a generic "reason for use" question with mindset-specific questions mapped directly to the Builder Mindset Framework, enabling segmentation by Founder, Optimizer, Accelerator, and Learner intent. Survey includes CSAT (Q1), primary goal (Q2), project type (Q3), ease of use for their stated goal (Q4), AI usage (Q5), and open-text improvement suggestion (Q6). Rate-limited to once every 30 days per user to minimize fatigue.</div></div></div>
-      <div class="cs-step"><div class="cs-step-num">2</div><div><div class="cs-step-title">LLM Analysis Automation — scaling qualitative insight</div><div class="cs-step-desc">Designed and co-built an automated pipeline using Gemini 2.5 Pro (via VertexAI API) to ingest, categorize, and summarize open-ended HaTS responses at scale. The pipeline assigns each response a theme, sub-category, and tags — replacing hours of manual UXR work per cycle with a daily automated run. I wrote and iterated the classification prompts, defined the feedback taxonomy, reviewed misclassified responses to identify patterns and refine coding, and established an evaluation framework comparing LLM output against a manually-analyzed "gold set." The model achieved 87% consistency, with 74% precision and 71% recall — meaning human review catches approximately one-quarter of insights.</div></div></div>
-      <div class="cs-step"><div class="cs-step-num">3</div><div><div class="cs-step-title">The UX Metrics Dashboard — real-time access for all stakeholders</div><div class="cs-step-desc">Built a Looker Studio dashboard with daily data refresh giving the full Firebase Studio team — PM, engineering, UXD, UXR — self-serve access to synthesized user feedback. The dashboard surfaces: a Gemini one-line TL;DR summary of current open-ended responses; ranked theme and sub-category breakdowns (top themes: AI &amp; Agentic Capabilities, Developer Workflow, Onboarding &amp; Usability, Platform Performance, Production Readiness); filterable raw comments by theme, sub-category, CSAT score, and date; CSAT distribution for users who left comments; and data export for offline analysis. Designed to give stakeholders the "what" quickly so UXR time goes to explaining the "why."</div></div></div>
-      <div class="cs-step"><div class="cs-step-num">4</div><div><div class="cs-step-title">HaTS + Telemetry Integration — connecting sentiment to behavior</div><div class="cs-step-desc">Co-authored a formal intake proposal (status: Green Track) to unify HaTS survey responses with Firebase Studio's product telemetry stream in Clearcut. The proposal asks engineering to embed HaTS survey metadata — Survey ID, Session ID, question responses, timestamps — directly within telemetry events. This would enable queries like: "Show me the sequence of agent interactions for users who rated ease-of-use as 'very difficult' and mentioned 'deployment' in their open-ended feedback." Currently, diagnosing negative sentiment requires manual, ad-hoc log analysis. This integration makes it systematic.</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">1</div><div><div class="cs-step-title">The HaTS V2 Survey: from "what" to "who and why"</div><div class="cs-step-desc">Redesigned the core in-product intercept survey to move beyond a generic satisfaction score. The key methodological change: replacing a generic "reason for use" question with mindset-specific questions mapped directly to the Builder Mindset Framework, enabling segmentation by Founder, Optimizer, Accelerator, and Learner intent. The V2 instrument was structured around builder intent rather than product satisfaction alone, covering primary goal, project context, ease-of-use against stated intent, AI usage, and an open-text improvement field. Rate-limited to once every 30 days per user to minimize fatigue.</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">2</div><div><div class="cs-step-title">LLM Analysis Automation: scaling qualitative insight</div><div class="cs-step-desc">Designed the pipeline architecture and methodology, with a quant collaborator on the broader DevX research team building the automated implementation in Gemini 2.5 Pro (via Vertex AI API). The pipeline assigned each response a theme, sub-category, and tags, replacing hours of manual UXR work per cycle with a daily automated run. I wrote and iterated the classification prompts, defined the four-level feedback taxonomy through three rounds of inter-rater reliability testing with the quant collaborator (target: 80% agreement, consistently met or exceeded), and established the evaluation framework comparing LLM output against a manually-analyzed gold set.</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">3</div><div><div class="cs-step-title">The UX Metrics Dashboard: real-time access for all stakeholders</div><div class="cs-step-desc">Drove the cross-functional partnership with Strategy Ops and Data Science to build a Looker Studio dashboard with daily data refresh, giving the full Firebase Studio team (PM, engineering, UXD, UXR) self-serve access to synthesized user feedback. The dashboard surfaced a Gemini-generated summary of current open-ended responses, ranked theme and sub-category breakdowns, filterable raw comments by theme and satisfaction level, and data export for offline analysis. Designed to give stakeholders the "what" quickly so UXR time went to explaining the "why."</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">4</div><div><div class="cs-step-title">HaTS + Telemetry Integration: connecting sentiment to behavior</div><div class="cs-step-desc">Co-authored a formal intake proposal to unify HaTS survey responses with the platform's telemetry stream. The proposal asked engineering to embed survey metadata directly within telemetry events, enabling queries that linked in-product event sequences to the sentiment expressed by users who experienced them. At the time, diagnosing negative sentiment required manual, ad-hoc log analysis. The integration would have made it systematic.</div></div></div>
     </div>
   </div>
 
   <div class="cs-body">
-    <p class="cs-lbl">What the Dashboard Revealed</p>
-    <p class="cs-text" style="max-width:700px;margin-bottom:1.5rem">The first full cycle of LLM-classified feedback surfaced a clear prioritization signal for the product team. Five major themes emerged from open-ended responses:</p>
-    <div class="cs-insights">
-      <div class="cs-insight" style="border-left-color:var(--accent2)"><div class="cs-insight-title">AI &amp; Agentic Capabilities <span style="font-weight:400;color:var(--ink3)">(top theme)</span></div><div class="cs-insight-text">Users reporting issues with performance (slowness), stability (crashes), and AI reliability (errors, loops). Top subcategories: Integrations &amp; Extensibility, Agentic Behavior &amp; Automation, Model Reasoning &amp; Performance.</div></div>
-      <div class="cs-insight" style="border-left-color:var(--teal)"><div class="cs-insight-title">Developer Workflow</div><div class="cs-insight-text">Requests for better integration with existing tools and workflows — particularly GitHub and external frameworks. Deployment &amp; Hosting subcategory was heavily cited by dissatisfied users.</div></div>
-      <div class="cs-insight" style="border-left-color:var(--accent)"><div class="cs-insight-title">Onboarding &amp; Usability</div><div class="cs-insight-text">Requests for better beginner guidance, improved error handling, and more accessible documentation. Learning &amp; Documentation was a top subcategory across CSAT levels.</div></div>
-      <div class="cs-insight" style="border-left-color:var(--ink3)"><div class="cs-insight-title">Platform Performance &amp; Production Readiness</div><div class="cs-insight-text">Speed &amp; latency concerns and deployment barriers concentrated among users with higher system readiness, consistent with the Accelerator and Optimizer gap identified in the industry analyst engagement.</div></div>
-    </div>
-    <div class="cs-quote" style="margin-top:1.5rem"><p>"The worst thing about missing logging is that it cannot be backfilled — it only exists from the point at which it was added."</p><cite>— Google instrumentation guide, cited in the HaTS+Telemetry proposal to underscore the urgency of integration</cite></div>
+    <p class="cs-lbl">What the System Surfaced</p>
+    <p class="cs-text" style="max-width:700px">The first full cycle of LLM-classified feedback surfaced roughly 10 major themes spanning categories like agentic capability and quality, workflow integration, onboarding, platform performance, and production readiness. The signals aligned with gaps previously hypothesized for certain Builder Mindsets in adjacent research, validating that the feedback infrastructure was capturing the right level of analytical resolution to inform product strategy.</p>
   </div>
 
   <div class="impact-bar">
     <p style="font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,249,245,0.38);margin-bottom:1rem;">Impact</p>
     <div class="impact-bar-inner">
-      <div><div class="impact-bar-label">Efficiency</div><div class="impact-bar-val">Hours → minutes</div><div class="impact-bar-note">LLM automation pipeline replaced manual per-cycle qualitative analysis, freeing UXR time for strategic and generative research</div></div>
-      <div><div class="impact-bar-label">Access</div><div class="impact-bar-val">Self-serve insight</div><div class="impact-bar-note">Daily-refreshed dashboard gave PM, engineering, and UXD teams direct access to user feedback without waiting for UXR synthesis cycles</div></div>
-      <div><div class="impact-bar-label">Precision</div><div class="impact-bar-val">From CSAT to signal</div><div class="impact-bar-note">HaTS V2 moves from "75% CSAT against an 80% target" to "Founders experience a 30% dissatisfaction rate driven by deployment and authentication friction," turning a lagging KPI into an actionable diagnostic to "Founders experience a 30% dissatisfaction rate driven by friction in deploying authentication and payment systems"</div></div>
-      <div><div class="impact-bar-label">Roadmap</div><div class="impact-bar-val">Green Track approved</div><div class="impact-bar-note">HaTS+Telemetry integration proposal approved for implementation — once complete, enables direct causal linkage between in-product events and user sentiment scores</div></div>
+      <div><div class="impact-bar-label">Efficiency</div><div class="impact-bar-val">Real-time</div><div class="impact-bar-note">LLM automation pipeline replaced manual per-cycle qualitative analysis, freeing UXR time for strategic and generative research.</div></div>
+      <div><div class="impact-bar-label">Access</div><div class="impact-bar-val">Self-serve insight</div><div class="impact-bar-note">Daily-refreshed dashboard gave PM, engineering, and UXD teams direct access to user feedback without waiting for UXR synthesis cycles.</div></div>
+      <div><div class="impact-bar-label">Precision</div><div class="impact-bar-val">From score to signal</div><div class="impact-bar-note">HaTS V2 moved the team from a single satisfaction score against a target to a segmented diagnostic capable of explaining why specific user mindsets struggled. A lagging KPI became an actionable signal.</div></div>
+      <div><div class="impact-bar-label">Roadmap</div><div class="impact-bar-val">Approved for implementation</div><div class="impact-bar-note">HaTS+Telemetry integration proposal was approved for implementation. Once complete, would have enabled direct linkage between in-product events and user sentiment.</div></div>
     </div>
   </div>
 </article>
@@ -598,44 +593,46 @@ footer { background: var(--ink); color: rgba(250,249,245,0.3); padding: 1.25rem 
   <div class="cs-hero dark">
     <div class="cs-eyebrow"><span class="ci-tag tag-n">Strategic Validation</span><span class="ci-tag tag-m">Cohort Design</span><span class="ci-tag tag-f">Mixed Methods</span></div>
     <h2 class="cs-title">03 — Firebase Studio Post-Launch Survey</h2>
-    <p class="cs-subtitle">A broad-based survey deployed to all Firebase Studio users approximately one week after Google I/O — designed to move beyond the continuous HaTS pulse and ask a harder set of questions: who stayed, who churned, why, and what would it take to win them back. The findings seeded the Builder Mindsets framework and drove three near-term product priorities.</p>
+    <p class="cs-subtitle">A broad-based survey deployed to Firebase Studio users one week after Google I/O 2025. Designed to capture cohort-specific signals across active users, lapsed users, light-touch users, and dormant accounts. Statistical validation of the Builder Mindsets framework against the product's primary KPI.</p>
     <div class="cs-outcome-row">
       <div class="cs-outcome"><span class="cs-outcome-num">2,285</span><span class="cs-outcome-lbl">Survey respondents</span></div>
-      <div class="cs-outcome"><span class="cs-outcome-num">59%</span><span class="cs-outcome-lbl">Overall satisfaction</span></div>
-      <div class="cs-outcome"><span class="cs-outcome-num">80%</span><span class="cs-outcome-lbl">CSAT among retained users</span></div>
-      <div class="cs-outcome"><span class="cs-outcome-num">73%</span><span class="cs-outcome-lbl">Of "just curious" users had already churned</span></div>
+      <div class="cs-outcome"><span class="cs-outcome-num">4 cohorts</span><span class="cs-outcome-lbl">Usage states routed via conditional logic</span></div>
+      <div class="cs-outcome"><span class="cs-outcome-num">Stat. sig.</span><span class="cs-outcome-lbl">Predictor of CSAT</span></div>
+      <div class="cs-outcome"><span class="cs-outcome-num">Validated</span><span class="cs-outcome-lbl">Builder Mindsets framework</span></div>
     </div>
   </div>
 
   <div class="cs-body">
     <div class="cs-two">
       <div>
-        <p class="cs-lbl">The Challenge</p>
-        <p class="cs-text">The HaTS survey captured a continuous signal from users who were actively engaging with Firebase Studio. But it had a blind spot: the users who had already left. A month after launch, the team needed a fuller accounting of the user base — including those who had tried it and churned, those who had signed up but never engaged, and those who were comparing Studio to a growing field of competitors.</p>
+        <p class="cs-lbl">The Background</p>
+        <p class="cs-text">One month after Firebase Studio's launch, the HaTS survey was capturing a continuous signal from users actively engaging with the product. But it had a blind spot: the users who had already left. The team needed a fuller accounting of the user base, including those who had tried it and churned, signed up but never engaged, or were comparing Studio to a growing field of competitors.</p>
         <br>
-        <p class="cs-text">The specific strategic questions: What are users' initial impressions across the full spectrum of engagement? Which features drive satisfaction among those who stay? Why have others stopped — and what would it take to bring them back? And how does Firebase Studio stack up against the AI development tools users were already using?</p>
+        <p class="cs-lbl">The Challenge</p>
+        <p class="cs-text">The strategic questions were: who stays, who churns, and why? Which segments drive satisfaction? And does user intent (as defined by the emerging Builder Mindsets framework) actually predict company-level satisfaction outcomes, or is it just a useful descriptive lens?</p>
         <br>
         <p class="cs-lbl">My Role</p>
-        <p class="cs-text">Lead researcher and report author. I designed the research plan and survey instrument (5 sections, mix of multiple-choice, scaled rating, select-all-that-apply, and open-ended questions), coordinated cross-functional approval and distribution via Qualtrics and Gamma email campaign, analyzed the preliminary dataset (n=1,756 from 5/26–6/19), authored the topline report, and presented findings to the Firebase Studio product team. Collaborators: Emily Christofides, Katharine Norwood, Alice Merrick.</p>
+        <p class="cs-text">Lead researcher and report author. I designed the research plan and survey instrument (5 sections with conditional logic), coordinated cross-functional approval and distribution via Qualtrics, conducted the statistical analysis in Qualtrics Stats iQ, authored the topline report, and presented findings to the Firebase Studio product team. Collaborated with Qualitative Research and Strategy &amp; Operations partners on the broader DevX team.</p>
       </div>
       <div class="cs-details-box">
         <div class="cs-detail-row"><div class="cs-detail-key">Company</div><div class="cs-detail-val">Google · <a href="https://cloud.google.com/blog/products/application-development/firebase-studio-lets-you-build-full-stack-ai-apps-with-gemini" target="_blank" rel="noopener" style="color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2);">Firebase Studio ↗</a> (evolved from <a href="https://developers.googleblog.com/introducing-project-idx-an-experiment-to-improve-full-stack-multiplatform-app-development/" target="_blank" rel="noopener" style="color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2);">Project IDX ↗</a>) · UX Research Lead on launch</div></div>
-        <div class="cs-detail-row"><div class="cs-detail-key">Fielding dates</div><div class="cs-detail-val">May 26 – June 27, 2025 (preliminary report: 5/26–6/19, n=1,756)</div></div>
-        <div class="cs-detail-row"><div class="cs-detail-key">Distribution</div><div class="cs-detail-val">Qualtrics web-based survey · Gamma email campaign to all opted-in Firebase Studio users</div></div>
-        <div class="cs-detail-row"><div class="cs-detail-key">Survey Design</div><div class="cs-detail-val">5 sections: Demographics · Discovery & First Impressions · Current Experience (conditional logic by usage state) · Technology & Preferences · Optional Feedback</div></div>
-        <div class="cs-detail-row"><div class="cs-detail-key">Collaborators</div><div class="cs-detail-val">Emily Christofides · Katharine Norwood · Alice Merrick · Sam Graziano (UXI) · Annum Munir · Connor Story</div></div>
+        <div class="cs-detail-row"><div class="cs-detail-key">Fielding dates</div><div class="cs-detail-val">May–June 2025 (post-Google I/O launch wave)</div></div>
+        <div class="cs-detail-row"><div class="cs-detail-key">Distribution</div><div class="cs-detail-val">Qualtrics web-based survey distributed via email campaign to opted-in users</div></div>
+        <div class="cs-detail-row"><div class="cs-detail-key">Survey Design</div><div class="cs-detail-val">5 sections with conditional logic: Demographics · Discovery &amp; First Impressions · Current Experience (cohort-routed) · Technology &amp; Preferences · Optional Feedback</div></div>
+        <div class="cs-detail-row"><div class="cs-detail-key">Collaborators</div><div class="cs-detail-val">Qualitative Research, Strategy &amp; Operations, and Data Science partners across the DevX org</div></div>
+        <div class="cs-detail-row" style="border-top:1px solid var(--paper3);padding-top:0.75rem;margin-top:0.5rem;"><div class="cs-detail-val" style="font-style:italic;font-size:0.78rem;color:var(--ink3);grid-column:1/-1;">This case describes program-level methodology and structural findings only. Specific internal metrics, business-sensitive numbers, and confidential implementation details are omitted.</div></div>
       </div>
     </div>
   </div>
 
   <div class="cs-body gray">
     <p class="cs-lbl">Survey Design: A Strategic Research Instrument</p>
-    <p class="cs-text" style="max-width:700px;margin-bottom:1.5rem">The survey was designed with conditional logic to capture meaningfully different experiences across four distinct usage states — allowing for targeted analysis of each cohort rather than a single averaged dataset.</p>
+    <p class="cs-text" style="max-width:700px;margin-bottom:1.5rem">The survey was designed with conditional logic to capture meaningfully different experiences across four distinct usage states, allowing for targeted analysis of each cohort rather than a single averaged dataset.</p>
     <div class="cs-steps">
-      <div class="cs-step"><div class="cs-step-num">1</div><div><div class="cs-step-title">Continue to use it — active retained users</div><div class="cs-step-desc">Routed to questions about most valuable features, what could be improved, and open-ended feedback. The "what's working" signal.</div></div></div>
-      <div class="cs-step"><div class="cs-step-num">2</div><div><div class="cs-step-title">Used it for a while, but stopped — lapsed users</div><div class="cs-step-desc">Routed to structured churn reason selection (8 options) and open-ended "what would bring you back" question. The richest signal for product priorities.</div></div></div>
-      <div class="cs-step"><div class="cs-step-num">3</div><div><div class="cs-step-title">Poked around, never used seriously — light touch</div><div class="cs-step-desc">Same churn battery as lapsed users. Captured friction in the earliest stages of the product experience.</div></div></div>
-      <div class="cs-step"><div class="cs-step-num">4</div><div><div class="cs-step-title">Signed up but never used — dormant accounts</div><div class="cs-step-desc">Routed to "why didn't you start" question — capturing barriers to first engagement, distinct from barriers to continued use.</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">1</div><div><div class="cs-step-title">Continue to use it: active retained users</div><div class="cs-step-desc">Routed to questions about most valuable features, what could be improved, and open-ended feedback. The "what's working" signal.</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">2</div><div><div class="cs-step-title">Used it for a while, but stopped: lapsed users</div><div class="cs-step-desc">Routed to structured churn reason selection and open-ended "what would bring you back" question. The richest signal for product priorities.</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">3</div><div><div class="cs-step-title">Poked around, never used seriously: light touch</div><div class="cs-step-desc">Same churn battery as lapsed users. Captured friction in the earliest stages of the product experience.</div></div></div>
+      <div class="cs-step"><div class="cs-step-num">4</div><div><div class="cs-step-title">Signed up but never used: dormant accounts</div><div class="cs-step-desc">Routed to "why didn't you start" question, capturing barriers to first engagement, distinct from barriers to continued use.</div></div></div>
     </div>
     <p class="cs-text" style="margin-top:1rem">The rationale for fielding approximately one week post-I/O: sufficient time for users to explore features and form real opinions, past the honeymoon effect, and early enough to identify churn drivers before they compounded.</p>
   </div>
@@ -644,40 +641,36 @@ footer { background: var(--ink); color: rgba(250,249,245,0.3); padding: 1.25rem 
     <p class="cs-lbl">Key Findings</p>
     <div class="cs-insights">
       <div class="cs-insight" style="border-left-color:var(--accent)">
-        <div class="cs-insight-title">AI is both the main attraction and the biggest flaw</div>
-        <div class="cs-insight-text">The top motivations for trying Firebase Studio were Gemini-powered code generation (65%), the App Prototyping agent (60%), and end-to-end app development environment (59%). But "AI model output quality" was simultaneously the #1 reason for dissatisfaction and churn — users found the AI inconsistent, buggy, and not on par with competitors like VSCode + Copilot and Cursor. The same feature that drew users in was most reliably disappointing them.</div>
+        <div class="cs-insight-title">AI features were both the strongest acquisition driver and the most-cited churn driver</div>
+        <div class="cs-insight-text">The same features pulling users in were most reliably disappointing them, a structural product challenge rather than a customer-service issue.</div>
       </div>
       <div class="cs-insight" style="border-left-color:var(--accent2)">
-        <div class="cs-insight-title">Satisfaction is polarized — with more detractors than neutrals</div>
-        <div class="cs-insight-text">Among all respondents who had tried Firebase Studio, 59% were satisfied but a concerning 24% were dissatisfied. The dissatisfied group (24%) was larger than the neutral group (17%) — indicating Studio was creating active detractors, not just passive non-users. Among retained users (those who continue to use it), satisfaction jumped sharply to 80%, confirming the product's promise when it worked.</div>
+        <div class="cs-insight-title">Satisfaction was bimodally distributed</div>
+        <div class="cs-insight-text">Among users who continued using the product, satisfaction was strong. The dissatisfied population was larger than the neutral population, suggesting active detractor risk rather than passive non-engagement.</div>
       </div>
       <div class="cs-insight" style="border-left-color:var(--teal)">
-        <div class="cs-insight-title">Conversion from curiosity to active use was failing</div>
-        <div class="cs-insight-text">25% of respondents initially came "just curious about a new product/platform" — but 73% of that group had already stopped using it or never used it seriously. The gap between initial interest (driven by Google I/O buzz) and actual value demonstration was critical. Studio had a top-of-funnel draw it couldn't reliably convert.</div>
+        <div class="cs-insight-title">Top-of-funnel conversion was the dominant churn point</div>
+        <div class="cs-insight-text">A meaningful share of users came initially out of curiosity, and a substantial portion of that group churned before establishing real engagement. The gap between initial interest and value demonstration was the critical product challenge.</div>
       </div>
       <div class="cs-insight" style="border-left-color:var(--ink3)">
-        <div class="cs-insight-title">The user base confirmed professional ≠ technical</div>
-        <div class="cs-insight-text">Primary role breakdown: 38% professional technical, 24% hobbyist, 20% student or learner, 15% professional non-technical, 3% other. 53% were professionals in combined technical and business roles — confirming the post-launch survey data that directly seeded the Builder Mindsets framework's recognition that "professional" described organizational context, not coding ability. 56% were existing Firebase users; 53% were previous Project IDX users. Top markets: US (19%), India (18%), Brazil (7%), UK (5%).</div>
+        <div class="cs-insight-title">"Professional" described organizational context, not coding ability</div>
+        <div class="cs-insight-text">The user base was a mix of technical and non-technical professionals. The combined professional population formed a majority, directly seeding the Builder Mindsets framework's foundational claim that user intent (not technical proficiency) was the most useful segmentation lens.</div>
       </div>
     </div>
   </div>
 
   <div class="cs-body gray">
     <p class="cs-lbl">What Retained Users Valued</p>
-    <p class="cs-text" style="max-width:700px;margin-bottom:1.5rem">Among users who continued using Firebase Studio, 80% were satisfied. Their qualitative feedback clustered around two consistent strengths:</p>
-    <div class="cs-steps">
-      <div class="cs-step"><div class="cs-step-num">→</div><div><div class="cs-step-title">Rapid prototyping and idea validation</div><div class="cs-step-desc">The ability to quickly turn ideas into functional prototypes was the standout win. AI usage for retained users: 74% for coding/development, 46% for design, 37% for AI-powered features. The fastest path from idea to working artifact was the product's core value claim — and when it delivered, users noticed.</div></div></div>
-      <div class="cs-step"><div class="cs-step-num">→</div><div><div class="cs-step-title">AI as a true partner (when it worked)</div><div class="cs-step-desc">Satisfied users described a "fully integrated Gemini in the app development environment that can read and modify the code" as a qualitatively different experience from other tools. The phrase "vibe coding" appeared as a genuine positive — not just a marketing label. The delta between this experience and the frustration reported by churned users framed the core product challenge precisely.</div></div></div>
-    </div>
+    <p class="cs-text" style="max-width:700px">Retained users described two distinct strengths: the speed of going from idea to functional prototype, and (when AI features worked) a qualitatively different development experience compared to standalone tools. The delta between this satisfied experience and the frustration reported by churned users framed the core product challenge: the product's value claim was real, but inconsistently delivered.</p>
   </div>
 
   <div class="impact-bar">
-    <p style="font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,249,245,0.38);margin-bottom:1rem;">Recommendations & Impact</p>
+    <p style="font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,249,245,0.38);margin-bottom:1rem;">Recommendations &amp; Impact</p>
     <div class="impact-bar-inner">
-      <div><div class="impact-bar-label">Rec 1</div><div class="impact-bar-val">Core reliability</div><div class="impact-bar-note">Improve Gemini-powered code generation quality and address AI model output quality — the #1 churn driver. Invest in platform stability to prevent crashes and slow load times.</div></div>
-      <div><div class="impact-bar-label">Rec 2</div><div class="impact-bar-val">Framework support</div><div class="impact-bar-note">Broaden support for Flutter and KMP to reach mobile developers (29% Flutter users in survey). Streamline Google Cloud service integrations for a more seamless "one-click" experience.</div></div>
-      <div><div class="impact-bar-label">Rec 3</div><div class="impact-bar-val">Onboarding</div><div class="impact-bar-note">Refine first-run experience to guide new users to Studio's core value faster. Develop guided tutorials, documentation, and sample projects to convert initial curiosity into long-term usage.</div></div>
-      <div><div class="impact-bar-label">Downstream</div><div class="impact-bar-val">Seeded mindsets</div><div class="impact-bar-note">Segmentation data — particularly the professional ≠ technical finding and the 4 usage states — became a primary input stream for the Builder Mindsets Framework (Case 11).</div></div>
+      <div><div class="impact-bar-label">Validation</div><div class="impact-bar-val">Builder Mindsets framework</div><div class="impact-bar-note">Statistical testing in Qualtrics Stats iQ found user intent was the most statistically significant predictor of CSAT. <a href="#case4" style="color:rgba(250,249,245,0.85);text-decoration:none;border-bottom:1px solid rgba(250,249,245,0.4);">See Case 04 →</a></div></div>
+      <div><div class="impact-bar-label">Foundational</div><div class="impact-bar-val">Cohort segmentation</div><div class="impact-bar-note">Established four-cohort segmentation through conditional survey routing, allowing distinct analytical treatment of active, lapsed, light-touch, and dormant users.</div></div>
+      <div><div class="impact-bar-label">Methodological</div><div class="impact-bar-val">Survey infrastructure</div><div class="impact-bar-note">Designed cohort-aware survey instrument with conditional logic, deployed within weeks of product launch through email distribution to opted-in users.</div></div>
+      <div><div class="impact-bar-label">Strategic input</div><div class="impact-bar-val">Prioritized recommendations</div><div class="impact-bar-note">Delivered three prioritized product recommendations to Firebase Studio product and engineering leadership.</div></div>
     </div>
   </div>
 </article>
@@ -702,7 +695,7 @@ footer { background: var(--ink); color: rgba(250,249,245,0.3); padding: 1.25rem 
     <div class="cs-two">
       <div>
         <p class="cs-lbl">The Background</p>
-        <p class="cs-text">Firebase Studio launched in April 2025 as the natively agentic evolution of Project IDX, anchored by the App Prototyping agent and Gemini in Firebase. The platform's shift dramatically expanded who could build software: post-launch data showed a meaningful shift in the professional-vs.-non-professional composition of the user base, with a substantial portion coming from non-technical professional roles. The most common reason for visiting was to start new projects, a strong top-of-funnel signal that the existing model couldn't explain or serve. The user base had outgrown its persona model.</p>
+        <p class="cs-text">Firebase Studio launched in April 2025 as the natively agentic evolution of Project IDX, anchored by the App Prototyping agent and Gemini in Firebase. The platform's shift dramatically expanded who could build software: post-launch data showed a meaningful shift in the professional vs. non-professional composition of the user base, with a substantial portion coming from non-technical professional roles. Strong top-of-funnel signals indicated the user base had outgrown its persona model.</p>
         <br>
         <p class="cs-lbl">The Challenge</p>
         <p class="cs-text">As Firebase Studio's user base shifted from professional developers to a much broader builder population (founders, learners, and non-technical roles), the team needed a way to make strategic decisions about who to serve and how. Existing personas, built around technical skill level and job title, couldn't answer that question. We needed a framework grounded in user intent, not user identity.</p>
@@ -800,7 +793,7 @@ footer { background: var(--ink); color: rgba(250,249,245,0.3); padding: 1.25rem 
     <p class="cs-text" style="max-width:700px;margin-bottom:1.5rem">The framework was independently validated three ways before adoption.</p>
     <div class="cs-insights">
       <div class="cs-insight" style="border-left-color:var(--accent)"><div class="cs-insight-title">Qualitative validation</div><div class="cs-insight-text">20 low-code journey mapping interviews with externally-recruited builders, conducted by a qualitative researcher on the broader DevX team. The mindsets held across the interview population.</div></div>
-      <div class="cs-insight" style="border-left-color:var(--accent2)"><div class="cs-insight-title">Quantitative validation</div><div class="cs-insight-text">Statistical testing of the Firebase Studio post-launch survey (n=2,285) using Qualtrics StatsIQ found that user intent was the most statistically significant predictor of CSAT in the post-launch survey. <a href="#case3" style="color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2);">See Case 03 →</a></div></div>
+      <div class="cs-insight" style="border-left-color:var(--accent2)"><div class="cs-insight-title">Quantitative validation</div><div class="cs-insight-text">Statistical testing of the Firebase Studio post-launch survey (n=2,285) using Qualtrics Stats iQ found that user intent was the most statistically significant predictor of CSAT. <a href="#case3" style="color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2);">See Case 03 →</a></div></div>
       <div class="cs-insight" style="border-left-color:var(--teal)"><div class="cs-insight-title">External validation</div><div class="cs-insight-text">An industry analyst partner mapped 20 independently-recruited interviewees to the framework and adopted it as the structuring lens for their strategic recommendations. <a href="#case5" style="color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2);">See Case 05 →</a></div></div>
     </div>
   </div>
